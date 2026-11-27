@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardápio</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header>
+    <h1 id="nome-loja">Cardápio</h1>
+  </header>
+
+  <main>
+    <section id="produtos"></section>
+  </main>
+
+  <aside id="carrinho">
+    <h3>Seus dados</h3>
+<input id="cli-nome" placeholder="Seu nome">
+<input id="cli-telefone" placeholder="Telefone com DDD">
+<input id="cli-endereco" placeholder="Endereço de entrega">
+<select id="cli-pagamento">
+  <option>Pix</option>
+  <option>Dinheiro</option>
+  <option>Cartão na entrega</option>
+</select>
+    <h2>Seu pedido</h2>
+    <ul id="itens-carrinho"></ul>
+    <p>Total: <strong id="total">R$ 0,00</strong></p>
+    <button id="btn-enviar" disabled>Enviar pedido pelo WhatsApp</button>
+  </aside>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/supabase.js"></script>
+  <script src="js/catalogo.js"></script>
+  <script src="js/pedido.js"></script>
+</body>
+</html>
